@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap-5.1.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>TEST</title>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <div id="anter-animation-container"></div>
+    <div id="anter-animation"></div>
+    <div onclick="myMove()" class="btn btn-success w-25">Click me</div>
+    <div onclick="myTransition()" class="btn btn-success w-25">Click me2</div>
+    <div onclick="myTransition2()" class="btn btn-success w-25">Click me3</div>
+
+    <script>
+        function myTransition2() {
+            var elem = document.getElementById("anter-animation");
+            elem.style.backgroundColor = "red";
+            elem.style.width = '50px';
+            elem.style.height = '50px';
+        }
+        function myTransition() {
+            var elem = document.getElementById("anter-animation");
+            elem.style.backgroundColor = "orange";
+            elem.style.width = '100px';
+            elem.style.height = '100px';
+        }
+        function myMove() {
+            var elem = document.getElementById("anter-animation");
+            var pos = 0;
+            var id = setInterval(frame, 10);
+            function frame() {
+                if (pos == 350) {
+                    clearInterval(id);
+                } else {
+                    pos++;
+                    elem.style.top = pos + 'px';
+                    elem.style.left = pos + 'px';
+                }
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>
