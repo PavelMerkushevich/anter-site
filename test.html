@@ -10,14 +10,33 @@
     <title>TEST</title>
 </head>
 
-<body class="d-flex flex-column h-100">
-    <div id="anter-animation-container"></div>
+<body>
+
+    <div id="test-block"><img id="test" src=""></div>
+    <!-- <div id="anter-animation-container"></div>
     <div id="anter-animation"></div>
     <div onclick="myMove()" class="btn btn-success w-25">Click me</div>
     <div onclick="myTransition()" class="btn btn-success w-25">Click me2</div>
     <div onclick="myTransition2()" class="btn btn-success w-25">Click me3</div>
+    <div onclick="test()" class="btn btn-success w-25">Click me4</div> -->
 
+
+
+    <!-- JS Scripts -->
+    <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
+        $('document').ready(function (){
+            $("#test").attr("src", "assets/animation/AnterLogoAnimation3.gif");
+            setTimeout(function () {
+                $('#test-block').fadeOut(700);
+                $('#test').slideUp(500);
+            }, 9000); 
+        })
+               
+        
+        function test() {
+            $("#anter-animation").css('background-color', 'blue');
+        }
         function myTransition2() {
             var elem = document.getElementById("anter-animation");
             elem.style.backgroundColor = "red";

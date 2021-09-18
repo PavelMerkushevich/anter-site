@@ -7,10 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/bootstrap-5.1.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
     <title>Home</title>
 </head>
 
 <body class="d-flex flex-column h-100">
+    <div id="main-anter-animation-block"><img id="main-anter-animation" src=""></div>
+    <!-- <div style="overflow: hidden;"> -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -54,22 +61,29 @@
                 </div>
                 <div>
                     <div class="d-grid gap-2">
-                        <a href="https://www.youtube.com/channel/UCCPAIyiQiIAmu7nxOG8J6Tw" class="btn btn-info py-2" type="button">YouTube</a>
+                        <a href="https://www.youtube.com/channel/UCCPAIyiQiIAmu7nxOG8J6Tw" class="btn btn-info py-2"
+                            type="button">YouTube</a>
                         <a href="https://vk.com/anterdev" class="btn btn-info py-2" type="button">Vkontakte</a>
                         <a href="https://www.patreon.com/anterteam" class="btn btn-info py-2" type="button">Patreon</a>
-                        <a href="https://discord.com/channels/858338154817912864/858458237380853830" class="btn btn-info py-2" type="button">Discord</a>
-                        <a href="mailto:contact.anter.dev@gmail.com" class="btn btn-info py-2" type="button">Email Us</a>
-                        
+                        <a href="https://discord.com/channels/858338154817912864/858458237380853830"
+                            class="btn btn-info py-2" type="button">Discord</a>
+                        <a href="mailto:contact.anter.dev@gmail.com" class="btn btn-info py-2" type="button">Email
+                            Us</a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <!-- </div> -->
+    <footer class="footer container-fluid p-2 bg-dark d-flex align-items-center justify-content-around">
+        <span>©All Rights Reserved. <a href="#" class="link-info text-decoration-none">Anter Team.</a><br><a href="#"
+                class="link-secondary text-decoration-none">By Mercury Co. </a><br><a class="link-danger"
+                href="mailto:contact.anter.dev@gmail.com">contact.anter.dev@gmail.com</a></span>
+        <div>
+            <img src="assets/images/anter-logo-print.jpg" alt="Anter logo with print"
+                class="img-responsive anter-logo-print d-inline-block align-text-top">
+        </div>
 
-    <footer class="footer container-fluid  py-3  bg-dark d-flex justify-content-around">
-        <span>©All Rights Reserved. Anter Team<br>contact.anter.dev@gmail.com</span>
-        <img src="assets/images/anter-logo-print.jpg" alt="Anter logo with print"
-            class="img-responsive anter-logo-print d-inline-block align-text-top">
         <div class="d-flex flex-row">
             <span class="nav-item">
                 <a class="nav-link link-info" href="#">Jobs</a>
@@ -82,6 +96,10 @@
 
     <!--Bootstrap js-->
     <script src="assets/bootstrap-5.1.1-dist/js/bootstrap.js"></script>
+    <!-- JQuery -->
+    <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- JS Scripts -->
+    <script src="assets/js/main-anter-animation.js"></script>
 </body>
 
 </html>
