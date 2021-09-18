@@ -1,13 +1,38 @@
 $('#main-anter-animation-block').ready(function () {
     $("#main-anter-animation").attr("src", "assets/animation/antersiteanim.gif");
     setTimeout(function () {
-        $('#main-anter-animation-block').fadeOut(600);
-        $('#main-anter-animation').slideUp(500);
+        $('#main-anter-animation-block').css({
+            'background-color': 'rgb(0,0,0,0)',
+        });
+        $('#main-anter-animation').css({
+            'transition': '1s',
+            'width': '5em',
+            'top': '-0.5em',
+            'left': '45%',
+        });
+        setTimeout(function () {
+            $('#main-c').fadeIn(300);
+            $('#main-burger').fadeIn(300);
+            $('#main-language-globus').fadeIn(300);
+        }, 2350)
     }, 2000);
     // Action for click -->
     $('#main-anter-animation-block').click(function () {
-        $('#main-anter-animation-block').fadeOut(600);
-        $('#main-anter-animation').slideUp(500);
+        $('#main-anter-animation-block').css({
+            'background-color': 'rgb(0,0,0,0)',
+        });
+        $('#main-anter-animation').css({
+            'transition': '1s',
+            'width': '5em',
+            'top': '-0.5em',
+            'left': '45%',
+        });
+        setTimeout(function () { 
+            $('#main-c').fadeIn(300);
+            $('#main-burger').fadeIn(300);
+            $('#main-language-globus').fadeIn(300);
+         }, 2600)
+        
     });
 });
 
