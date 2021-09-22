@@ -68,6 +68,10 @@ body{
   left: 30%;
    background-color: rgb(0,0,0,0);
 } */
+.main-anter-animation-container{
+  display: flex; 
+  justify-content: center;
+}
 .main-anter-animation-block{
   background-color: #000000;
   position: absolute;
@@ -81,18 +85,18 @@ body{
 .main-anter-animation{
   width: 30%;
   position: relative;
-  top: 20%;
+  top: 30%;
   left: 35%;
   background-color: rgb(0,0,0,0);
 }
-.main-anter-animation_after{
+/* .main-anter-animation_after{
   width: 5em;
   position: relative;
   top: 40%;
   left: 47%;
   background-color: rgb(0,0,0,0);
   
-}
+} */
 /* #main-slide-block{
   background-color: #000000;
   position: absolute;
@@ -119,7 +123,7 @@ body{
         flex-direction: column;
         width: 100%;
         text-align: center;
-        margin: 10% 0;
+        margin: 12% 0;
         min-height: 200px;
         align-items: center;
  
