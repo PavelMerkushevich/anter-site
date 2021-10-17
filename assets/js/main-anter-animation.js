@@ -47,7 +47,7 @@ $('#main-anter-animation-block').ready(function () {
                 $('#main-c').fadeIn(300);
                 $('#main-burger').fadeIn(300);
                 $('#main-language-globus').fadeIn(300);
-            }, 750)
+            }, 300)
         }
     });
 
