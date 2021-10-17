@@ -36,7 +36,7 @@ $('#main-anter-animation-block').ready(function () {
             setTimeout(function () {
                 $("#main-anter-animation").attr("src", "assets/images/anter-logo.png");
                 $('#main-anter-animation').css({
-                    'transition': '1s',
+                    
                     'width': '3.8em',
                     'top': '0.28em',
                     'left': '45%',
