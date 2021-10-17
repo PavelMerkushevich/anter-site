@@ -4,6 +4,7 @@ $('#main-anter-animation-block').ready(function () {
         $('#main-anter-animation-block').css({
             'background-color': 'rgb(0,0,0,0)',
         });
+        $("#main-anter-animation").attr("src", "assets/images/anter-logo.png");
         $('#main-anter-animation').css({
             'transition': '1s',
             'width': '5em',
