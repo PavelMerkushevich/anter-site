@@ -8,9 +8,10 @@ $('#main-anter-animation-block').ready(function () {
             timeoutCount++
             $('#main-anter-animation-block').css({
                 'background-color': 'rgb(0,0,0,0)',
+                
             });
 
-            $('#main-anter-animation').css({
+            $('#main-anter-animation').css({        
                 'transition': '1s',
                 'width': '5em',
                 'top': '-0.3em',
@@ -20,7 +21,7 @@ $('#main-anter-animation-block').ready(function () {
                 $('#main-c').fadeIn(300);
                 $('#main-burger').fadeIn(300);
                 $('#main-language-globus').fadeIn(300);
-            }, 1100)
+            }, 8)
         }
     }, 2000);
 
@@ -31,6 +32,7 @@ $('#main-anter-animation-block').ready(function () {
             clickCount++
             $('#main-anter-animation-block').css({
                 'background-color': 'rgb(0,0,0,0)',
+                'z-index': '1',
             });
             $('#main-anter-animation').fadeOut(300);
             setTimeout(function () {

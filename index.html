@@ -18,19 +18,18 @@
 
 <body class="d-flex flex-column h-100">
 
-    <div id="main-anter-animation-container" class="main-anter-animation-container">
-        <div id="main-anter-animation-block" class="main-anter-animation-block">
-            <img id="main-anter-animation" class="main-anter-animation" >
-        </div>
-    </div>
+
     <div id="main-slide">
+        <div id="main-anter-animation-container" class="main-anter-animation-container">
+            <div id="main-anter-animation-block" class="main-anter-animation-block">
+                <img id="main-anter-animation" class="main-anter-animation">
+            </div>
+        </div>
         <div>
 
             <nav class="navbar navbar-dark">
                 <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                        aria-expanded="false" aria-label="Toggle navigation" id="main-burger">
+                    <button class="navbar-toggler" type="button" id="main-burger">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <a class="nav-link" href="#" id="main-language-globus"><img
@@ -38,13 +37,30 @@
                 </div>
 
             </nav>
-            <div class="collapse menumy" id="navbarToggleExternalContent">
-                <div>
-                    <div><a class="nav-link link-light active" aria-current="page" href="#">Home</a></div>
-                    <div><a class="nav-link link-light" href="#">Jobs</a></div>
-                    <div><a class="nav-link link-light" href="#">Contact</a></div>
+            <div id="main-menu">
+                <div style="display: flex; flex-direction: column;">
+                    <a class="menu-image-container" href="#">
+                        <img style="width: 90%;" src="assets/images/anter-logo-print-nonfon.png" alt="Anter logo">
+                    </a>
+                    <a class="menu-link" href="#">
+                        <span class="menu-link-text"><span class="menu-link-text-circle">⭘</span><span>&nbsp;Главная</span></span>
+                    </a>
+                    <a class="menu-link" href="#">
+                        <span class="menu-link-text"><span class="menu-link-text-circle">⭘</span><span>&nbsp;О нас</span></span>
+                    </a>
+                    <a class="menu-link" href="#">
+                        <span class="menu-link-text"><span class="menu-link-text-circle">⭘</span><span>&nbsp;Наши проекты</span></span>
+                    </a>
+                    <a class="menu-link" href="#">
+                        <span class="menu-link-text"><span class="menu-link-text-circle">⭘</span><span>&nbsp;Контакты</span></span>
+                    </a>
+                    <a class="menu-link" href="#">
+                        <span class="menu-link-text"><span class="menu-link-text-circle">⭘</span><span>&nbsp;Вакансии</span></span>
+                    </a>
+
                 </div>
             </div>
+            <div id="main-menu-fon-blure"></div>
 
 
         </div>
@@ -139,6 +155,7 @@
     <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- JS Scripts -->
     <script src="assets/js/main-anter-animation.js"></script>
+    <script src="assets/js/main-menu.js"></script>
 </body>
 
 </html>
