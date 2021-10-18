@@ -116,8 +116,9 @@ body{
 }
 
 #main-menu{
-  display: none;
+  
   position: absolute;
+  margin-left:-70%;
   top: 0;
   background-color: white;
   color: black;
@@ -134,15 +135,16 @@ body{
   min-width: 100%;
   min-height: 100%;
   background: rgba(14, 13, 13, 0.2); 
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(10px);
   z-index: 140
   
 }
 .menu-image-container{
-  /* display: flex;
-  justify-content: center; */
+  display: flex;
+  justify-content: center; 
   height: 5em;
   margin-bottom: 5em;
+  
 
 }
 .menu-link{
