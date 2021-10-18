@@ -118,7 +118,7 @@ body{
 #main-menu{
   
   position: absolute;
-  margin-left:-40em;
+  margin-left:-70%;
   top: 0;
   background-color: white;
   color: black;
@@ -140,10 +140,11 @@ body{
   
 }
 .menu-image-container{
-  /* display: flex;
-  justify-content: center; */
+  display: flex;
+  justify-content: center; 
   height: 5em;
   margin-bottom: 5em;
+  
 
 }
 .menu-link{
