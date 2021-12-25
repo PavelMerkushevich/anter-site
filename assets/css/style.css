@@ -5,10 +5,11 @@ html{
     height: 100%;
 }
 body{
-    background-color: #16181B;
+    background-color: white;
     height: 100%;
 }
 .footer {
+    background-color: black;
     color: gray;
      /* position: fixed;
     bottom: 0;  */
@@ -19,8 +20,8 @@ body{
     height: 30px;
 }
 .anter-logo-print{
-    height: 41px;
-    width: 122px;
+    height: 35px;
+    width: 155px;
     max-height: 100%;
 }
 .anter-logo-print-main{
@@ -177,4 +178,25 @@ body{
 }
 .menu-link:hover{
   background-color: black;
+}
+
+.main-block{
+  background-color: white;
+}
+
+.programmers-icons-container{
+  margin-top: 5em;
+  display: flex;
+  justify-content: space-around;
+}
+.programmer-info-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  
+}
+.programmer-name{
+  font-size: 150%;
+  font-weight: bold;
 }
