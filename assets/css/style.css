@@ -11,8 +11,8 @@ body{
 .footer {
     background-color: black;
     color: gray;
-     /* position: fixed;
-    bottom: 0;  */
+      /* position: fixed;
+    bottom: 0;   */
 }
 
 .anter-logo{
@@ -183,6 +183,9 @@ body{
 .main-block{
   background-color: white;
 
+}
+.main-block-brick{
+  
 }
 
 .programmers-icons-container{
