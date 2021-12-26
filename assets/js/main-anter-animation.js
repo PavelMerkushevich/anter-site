@@ -25,9 +25,7 @@ $('#main-anter-animation-block').ready(function () {
         }
     }, 2000);
 
-    // Action for click -->
-
-    $('#main-anter-animation-block').click(function () {
+    function fadeOutAnimationClick() {
         if (clickCount == 0 && timeoutCount == 0) {
             clickCount++
             $('#main-anter-animation-block').css({
@@ -38,7 +36,7 @@ $('#main-anter-animation-block').ready(function () {
             setTimeout(function () {
                 $("#main-anter-animation").attr("src", "assets/images/anter-logo.png");
                 $('#main-anter-animation').css({
-                    
+
                     'width': '3.8em',
                     'top': '0.28em',
                     'left': '45%',
@@ -50,6 +48,47 @@ $('#main-anter-animation-block').ready(function () {
                 $('#main-burger').fadeIn(300);
                 $('#main-language-globus').fadeIn(300);
             }, 300)
+        }
+    }
+
+    function fadeOutAnimationScroll() {
+
+            clickCount++
+            $('#main-anter-animation-block').css({
+                'background-color': 'rgb(0,0,0,0)',
+                'z-index': '1',
+            });
+            $('#main-anter-animation').fadeOut(150);
+            setTimeout(function () {
+                $("#main-anter-animation").attr("src", "assets/images/anter-logo.png");
+                $('#main-anter-animation').css({
+
+                    'width': '3.8em',
+                    'top': '0.28em',
+                    'left': '45%',
+                });
+            }, 150)
+            setTimeout(function () {
+                $('#main-anter-animation').fadeIn(150);
+                $('#main-c').fadeIn(150);
+                $('#main-burger').fadeIn(150);
+                $('#main-language-globus').fadeIn(150);
+            }, 150)
+
+    }
+
+
+    // Action for click -->
+
+    $('#main-anter-animation-block').click(fadeOutAnimationClick);
+
+    // Action for scroll -->
+    let scrollWas = false; 
+
+    $(window).scroll(function () {
+        if(!scrollWas){
+            scrollWas = true;
+            fadeOutAnimationScroll();
         }
     });
 
