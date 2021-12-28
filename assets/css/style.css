@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-html {
-  height: 100%;
-}
+html {}
 
 body {
   background-color: white;
-  height: 100%;
+
 }
 
 .footer {
@@ -15,7 +13,8 @@ body {
   justify-content: space-around;
   background-color: black;
   color: gray;
-  position: relative;
+  flex: 0 0 auto;
+  height: 100px;
   width: 100%;
 }
 
@@ -90,8 +89,8 @@ body {
 }
 
 #main-slide {
-  min-height: 100%;
-  /* background-color: #070809;  */
+  height: 100vh;
+  /* background-color: #070809;   */
   background-color: #000000;
   z-index: 90;
 }
