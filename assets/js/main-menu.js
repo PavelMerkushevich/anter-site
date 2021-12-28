@@ -1,4 +1,3 @@
-window.onload = function (){
     $('#main-burger').click(function () {
         $('#main-menu').animate({ marginLeft: '0' }, 500);
         $('#main-menu-fon-blure').fadeIn(200);
@@ -11,6 +10,6 @@ window.onload = function (){
         $('#main-menu').animate({ marginLeft: '-70%' }, 500);
         $('#main-menu-fon-blure').fadeOut(200);
     }); 
-}
+
     
 
