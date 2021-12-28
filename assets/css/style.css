@@ -14,7 +14,6 @@ body {
   background-color: black;
   color: gray;
   flex: 0 0 auto;
-  height: 100px;
   width: 100%;
 }
 
@@ -132,7 +131,7 @@ body {
 #main-menu {
 
   position: absolute;
-  margin-left: -70%;
+  margin-left: -100%;
   top: 0;
   background-color: white;
   color: black;
@@ -222,4 +221,45 @@ body {
 .programmer-name {
   font-size: 150%;
   font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .main-c {
+    font-size: 500%;
+  }
+
+  #main-menu {
+    width: 30%;
+  }
+
+
+}
+
+@media (max-width: 992px) {
+  .main-c {
+    font-size: 400%;
+  }
+
+  #main-menu {
+    width: 40%;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-c {
+    font-size: 270%;
+  }
+
+  .programmers-icons-container {
+
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column-reverse;
+  }
+
+  #main-menu {
+    width: 100%;
+  }
 }
