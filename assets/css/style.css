@@ -1,35 +1,44 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-html{
-    height: 100%;
-}
-body{
-    background-color: white;
-    height: 100%;
-}
-.footer {
-    background-color: black;
-    color: gray;
-      /* position: fixed;
-    bottom: 0;   */
+html {
+  height: 100%;
 }
 
-.anter-logo{
-    width: 30px;
-    height: 30px;
+body {
+  background-color: white;
+  height: 100%;
 }
-.anter-logo-print{
-    height: 21px;
-    width: 114px;
-    max-height: 100%;
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  color: gray;
+  position: relative;
+  width: 100%;
+  
 }
-.anter-logo-print-main{
-    max-width: 7em;
+
+.anter-logo {
+  width: 30px;
+  height: 30px;
 }
-.main-navbar{
-   justify-content: right;
+
+.anter-logo-print {
+  height: 21px;
+  width: 114px;
+  max-height: 100%;
 }
+
+.anter-logo-print-main {
+  max-width: 7em;
+}
+
+.main-navbar {
+  justify-content: right;
+}
+
 /*
  * Header
  */
@@ -47,7 +56,7 @@ body{
   border-bottom-color: rgba(255, 255, 255, .25);
 }
 
-.nav-masthead .nav-link + .nav-link {
+.nav-masthead .nav-link+.nav-link {
   margin-left: 1rem;
 }
 
@@ -56,12 +65,13 @@ body{
   border-bottom-color: #fff;
 }
 
-.main-anter-animation-container{
-  display: flex; 
+.main-anter-animation-container {
+  display: flex;
   justify-content: center;
-  
+
 }
-.main-anter-animation-block{
+
+.main-anter-animation-block {
   background-color: #000000;
   position: absolute;
   width: 70%;
@@ -71,136 +81,147 @@ body{
   z-index: 100;
   opacity: 1;
 }
-.main-anter-animation{
+
+.main-anter-animation {
   width: 30%;
   position: relative;
   top: 34%;
   left: 35%;
-  background-color: rgb(0,0,0,0);
+  background-color: rgb(0, 0, 0, 0);
 }
 
-#main-slide{
+#main-slide {
   min-height: 100%;
   /* background-color: #070809;  */
   background-color: #000000;
   z-index: 90;
 }
+
 /* .menumy {
   
 } */
-.main-c-block{
-  
-   display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        margin: 12% 0;
-        min-height: 200px;
-        align-items: center;
- 
+.main-c-block {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  margin: 12% 0;
+  min-height: 200px;
+  align-items: center;
+
 }
-.main-c{
+
+.main-c {
   font-family: 'Arial';
   font-size: 700%;
 }
-#main-c{
+
+#main-c {
   display: none;
 }
 
-#main-burger{
-  display: none;
-}
-#main-language-globus{
+#main-burger {
   display: none;
 }
 
-#main-menu{
-  
+#main-language-globus {
+  display: none;
+}
+
+#main-menu {
+
   position: absolute;
-  margin-left:-70%;
+  margin-left: -70%;
   top: 0;
   background-color: white;
   color: black;
   width: 25%;
   height: 100%;
   z-index: 160;
-  
+
 
 }
-#main-menu-fon-blure{
+
+#main-menu-fon-blure {
   display: none;
   position: absolute;
   top: 0;
   min-width: 100%;
   min-height: 100%;
-  background: rgba(14, 13, 13, 0.2); 
+  background: rgba(14, 13, 13, 0.2);
   backdrop-filter: blur(10px);
   z-index: 140
-  
 }
-.menu-image-container{
+
+.menu-image-container {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   height: 5em;
   margin-bottom: 5em;
-  
+
 
 }
-.menu-link{
+
+.menu-link {
   display: flex;
   align-items: center;
   text-decoration: none;
   text-align: center;
   height: 4em;
-   z-index: 170;
-  
+  z-index: 170;
+
   text-align: left;
   padding-left: 10%;
 }
-.menu-link-text{
+
+.menu-link-text {
   display: flex;
   align-items: center;
   color: black;
   z-index: 180;
   font-size: 150%;
-  
-  
+
+
 }
-.menu-link-text-circle{
+
+.menu-link-text-circle {
   font-size: 70%;
   font-weight: bold;
 }
 
-.menu-link:hover > .menu-link-text{
+.menu-link:hover>.menu-link-text {
   color: white;
 }
-.menu-link:hover{
+
+.menu-link:hover {
   background-color: black;
 }
 
-.main-block{
+.main-block {
   background-color: white;
 
 }
-.main-block-brick{
-  
-}
 
-.programmers-icons-container{
+.main-block-brick {}
+
+.programmers-icons-container {
   margin-top: 5em;
   display: flex;
   justify-content: space-around;
 }
-.programmer-info-container{
+
+.programmer-info-container {
   display: flex;
   align-items: center;
   flex-direction: column;
 
-  
+
 }
-.programmer-name{
+
+.programmer-name {
   font-size: 150%;
   font-weight: bold;
 }
