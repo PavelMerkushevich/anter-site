@@ -227,10 +227,18 @@ body {
   font-size: 300%;
 }
 
+.h2-title-container {
+  display: flex;
+  justify-content: center;
+}
+
 .programmers-info-container {
   display: flex;
   flex-direction: column;
 }
+
+
+
 
 @media (max-width: 1200px) {
   .main-c {
